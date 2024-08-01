@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, .navbar {
+    position: relative; /* Ensure the position is not fixed or absolute unless intentional */
+    z-index: 1; /* Ensure z-index is set appropriately */
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header{
+        position: sticky;
+        top: 0;
+    }
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.btn-pink {
+    background-color: #e91e63;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #c2185b;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.image{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card{
+    width:auto;
+	height:auto;
+}
+#Reports .card {
+    height: 100%;
+}
+
+#Reports .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#Reports .card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+#Reports .card-title, #Reports .card-text, #Reports .card-body a {
+    margin-bottom: 10px;
+}
+/* Example styles for profile section */
+#profile {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+#profile .form-control {
+    margin-bottom: 15px;
+}
+
+#profile .btn {
+    margin-top: 10px;
+}
+
+
+/* Custom styles for the home section */
+.home-section {
+    height: 100vh;
+    background: url('photo2.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.overlay-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 80%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    animation: fadeIn 2s ease-in-out; /* Smooth fade-in effect */
+}
+
+.home-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase text for heading */
+    letter-spacing: 2px; /* Spacing between letters */
+    animation: slideInFromLeft 1.5s ease-out; /* Slide-in effect */
+}
+
+.home-section p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    line-height: 1.6; /* Better line spacing */
+    animation: slideInFromRight 1.5s ease-out; /* Slide-in effect */
+}
+
+.btn-pink {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5); /* Button shadow */
+}
+
+.btn-pink:hover {
+    background-color: #ff1493;
+    transform: scale(1.1); /* Slightly larger on hover */
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+    .home-section p {
+        font-size: 1.2rem;
+    }
+    .btn-pink {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.text-success {
+    color: green;
+}
+
+.text-danger {
+    color: red;
+}
